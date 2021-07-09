@@ -21,11 +21,11 @@ Make sure all containers are up and running:
 docker container list
 
 CONTAINER ID   IMAGE                                                    COMMAND                  CREATED         STATUS                   PORTS                                            NAMES
-818989699cf1   bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8          "/entrypoint.sh /run…"   2 minutes ago   Up 2 minutes (healthy)   0.0.0.0:9000->9000/tcp, 0.0.0.0:9870->9870/tcp   namenode
-06865eccae10   bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8          "/entrypoint.sh /run…"   2 minutes ago   Up 2 minutes (healthy)   9864/tcp                                         datanode
-85998aa7c898   bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8       "/entrypoint.sh /run…"   2 minutes ago   Up 2 minutes (healthy)   8042/tcp                                         nodemanager
-a4a1c1cba4e7   bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8     "/entrypoint.sh /run…"   2 minutes ago   Up 2 minutes (healthy)   8188/tcp                                         historyserver
-1f6373828e94   bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8   "/entrypoint.sh /run…"   2 minutes ago   Up 2 minutes (healthy)   8088/tcp                                         resourcemanager
+818989699cf1   bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8          "/entrypoint.sh /run"   2 minutes ago   Up 2 minutes (healthy)   0.0.0.0:9000->9000/tcp, 0.0.0.0:9870->9870/tcp   namenode
+06865eccae10   bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8          "/entrypoint.sh /run"   2 minutes ago   Up 2 minutes (healthy)   9864/tcp                                         datanode
+85998aa7c898   bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8       "/entrypoint.sh /run"   2 minutes ago   Up 2 minutes (healthy)   8042/tcp                                         nodemanager
+a4a1c1cba4e7   bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8     "/entrypoint.sh /run"   2 minutes ago   Up 2 minutes (healthy)   8188/tcp                                         historyserver
+1f6373828e94   bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8   "/entrypoint.sh /run"   2 minutes ago   Up 2 minutes (healthy)   8088/tcp                                         resourcemanager
 ```
 
 Go to the name node UI to see the status of hadoop cluster:
